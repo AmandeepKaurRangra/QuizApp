@@ -10,9 +10,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 public class third extends AppCompatActivity {
-    private ImageView imgView;
-    private EditText playerName;
-    private Button play;
+     ImageView imgView;
+     EditText playerName;
+     Button play;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

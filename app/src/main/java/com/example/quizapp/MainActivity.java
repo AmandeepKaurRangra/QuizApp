@@ -9,29 +9,29 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    private EditText username, password ;
-    private Button signIn, signUp;
+     EditText username, password ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        signIn = findViewById(R.id.b_signIn);
-        signUp=findViewById(R.id.signup);
-//        signIn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(MainActivity.this,third.class);
-//                startActivity(intent);
-//                finish();
-//            }
-//        });
+        Button signIn = (Button) findViewById(R.id.b_signIn);
+        Button signUp=(Button) findViewById(R.id.signup);
+       signIn.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+             Intent intent = new Intent(MainActivity.this,third.class);
+              startActivity(intent);
+
+           }
+      });
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,second.class);
                 startActivity(intent);
-                finish();
+
             }
         });
     }

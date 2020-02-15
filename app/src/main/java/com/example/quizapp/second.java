@@ -34,7 +34,7 @@ public class second extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent2 = new Intent(second.this, MainActivity.class);
                 startActivity(intent2);
-                finish();
+
             }
         });
     }
