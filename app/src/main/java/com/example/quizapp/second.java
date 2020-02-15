@@ -21,7 +21,7 @@ public class second extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        Intent intent=getIntent();
+        final Intent intent=getIntent();
 
         name=findViewById(R.id.username);
         email=findViewById(R.id.email);
